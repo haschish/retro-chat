@@ -39,15 +39,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ListItem
     }
 
     public class ListItemHolder extends RecyclerView.ViewHolder {
-        TextView time;
-        TextView name;
         TextView text;
 
         public ListItemHolder(@NonNull View itemView) {
             super(itemView);
-
-            time = itemView.findViewById(R.id.messageTime);
-            name = itemView.findViewById(R.id.messsageNickname);
             text = itemView.findViewById(R.id.messageText);
         }
     }
