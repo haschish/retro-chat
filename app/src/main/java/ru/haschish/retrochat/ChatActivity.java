@@ -103,19 +103,6 @@ public class ChatActivity extends AppCompatActivity {
 
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         recyclerView.setAdapter(adapter);
-
-        CountDownTimer timer = new CountDownTimer(Long.MAX_VALUE, 1000) {
-
-            public void onTick(long millisUntilFinished) {
-                Log.i("ChatActivity", "tick");
-                adapter.notifyDataSetChanged();
-            }
-
-            public void onFinish() {
-            }
-        };
-        timer.start();
-
     }
 
     private void sendMessage(String message) {
